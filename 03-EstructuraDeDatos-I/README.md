@@ -1,6 +1,5 @@
-# Estructuras de Datos I
-
-<table width="100%" style='table-layout:fixed;'>
+![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
+<table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shr5KEX8NFdrG14j9?prefill_clase=03-EstructuraDeDatos-I">
@@ -10,7 +9,7 @@
       </a>
     </td>
       <td>
-      <a href="https://quizizz.com/join/quiz/5f3fbbe7271037001b4ab7e3/start?from=soloLinkShare&referrer=5ee12dad966f1e001b82c78b">
+      <a href="https://quiz.soyhenry.com/evaluation/new/6066323c656c8d23c2e60e75">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/HSQuiz.svg/768px-HSQuiz.svg.png" width="100" height="100"/>
         <br>
         Hacé click acá completar el quizz teórico de esta lecture.
@@ -18,6 +17,10 @@
   </td>
   </tr>
 </table>
+
+# Estructuras de Datos I
+
+![asd](../_src/assets/03-EstructuraDeDatos-I/array.jpg)
 
 ## Recursividad
   
@@ -61,7 +64,6 @@ Este es un ejemplo muy básico de la estructura de una función recursiva (que n
 ### Suma recursiva
 
 Queremos sumar todos los números hasta un corte, entonces el caso base seria  cuando llegamos a 0 si sumamos desde el número y disminuyendo (porque así se me ocurrió en esta oportunidad), y nuestra llamada recursiva debería aparecer cuando ya sumamos y queremos que pase de número.
-
 
 ``` javascript
 // vamos a crear la función con la variable `num` que me pasan por parámetro 
@@ -192,7 +194,7 @@ Pruebenlo!
 
 ### Números Naturales (N)
 
-Los números naturales se definen como todos aquellos números mayores a cero sin decimales, o en una definición más matemática : 
+Los números naturales se definen como todos aquellos números mayores a cero sin decimales, o en una definición más matemática :
 
 > Definimos que 0 es un _Natural_.
 
@@ -271,10 +273,9 @@ En fin, podemos organizarlos de mil maneras, pero se entiende la idea que organi
 El arreglo es una estructura de datos que ya conocían! Es tan usada, que muchos lenguajes la implementan de forma nativa, como javascript.
 El arreglo es una colección finita de elementos que ocupan espacios contiguos de memoria, y se pueden acceder a cada uno de ellos a través de un índice.
 
-![Array](./img/array.jpg)
+![Array](../_src/assets/03-EstructuraDeDatos-I/array.jpg)
 
 Los arreglos nos sirven para guardar una colección de cosas (objetos, enteros, funciones, etc...) que tengan algo en común. Lo bueno de los arreglos es que la inserción es muy rápida, y es fácil acceder a un objeto si conocemos su índice. Pero no es tan bueno cuando tenemos que buscar un objeto en él, ya que tenemos que recorrerlo entero para encontrarlo. Borrar un elemento también es medio costoso.
-
 
 ## Sets
 
@@ -292,7 +293,7 @@ console.log(set1)      // Set { 1, 2, 3, 4, 5 }
 
 Esta estructura de datos es básicamente una _pila de cosas_. Vieron cuando tienen que lavar los platos: primero van poniendo un plato arriba del otro (armando la pila), después empiezan a sacar desde arriba para ir limpiando. Bueno, si se fijan bien el primer plato que ponen en la pila es el último que va a ser lavado, o bien, el último que entra es el primero que va a salir. Esto se conoce como una estructura tipo __LIFO__: _Last in, first out_.
 
-![stack](./img/stack.jpg)
+![stack](../_src/assets/03-EstructuraDeDatos-I/stack.jpg)
 
 Básicamente un stack tiene dos operaciones: `push()` y `pop()`, ya que sólo podés poner y sacar elementos en un orden definido, hace que no necesitemos más operaciones.
 Podemos usar múltiples formas de implementar una Pila en javascript. Lo podemos hacer usando arreglos, una lista enlazada, o bien crear nuestra propia clase Pila.
@@ -311,7 +312,7 @@ console.log(i);      // muestra 10
 Una cola, es una estructura en la cual el primer elemento que entra es el primer elemento que sale (como cuando hacemos una cola en el Banco :smile:). Esto es lo opuesto al comportamiento de una Pila, y se conoce como estructura tipo __FIFO__: _First in, First out_. La cola tiene dos métodos tambien: `enqueue()` y `dequeue()`, que sirven para encolar y 'desencolar' elementos.
 Esta estructura la vamos a usar mucho para representar problemas de la vida real. Por ejemplo, si tuviera que hacer una app que desvie llamados de clientes a operadores, podríamos hacer una cola, donde vamos metiendo los clientes que van llegando, y cuando algún operador esté libre, sacar un cliente de la cola y pasarlo.
 
-![colas](./img/cola.jpg)
+![colas](../_src/assets/03-EstructuraDeDatos-I/cola.jpg)
 
 Veamos como podemos implementarlo en Javascript, igual que con Pilas, se puede hacer de muchas maneras. Vamos a mostrar la más simple, con arreglos:
 
@@ -324,3 +325,7 @@ console.log(i);        // muestra 1
 ```
 
 Como ven, cuando construimos el set pasándole un [iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#iterable) nos devuelve un `Set` en donde cada uno de los elementos que contiene es único!
+
+## Homework
+
+Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/FT-M1/blob/master/03-EstructuraDeDatos-I/homework/README.md)
